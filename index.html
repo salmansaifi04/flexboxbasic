@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .bg1{
+            background-color: aqua;
+        }
+        .bg2{
+            background-color: bisque;
+        }
+        .bg3{
+            background-color: blue;
+        }
+        .bg3{
+            background-color: brown;
+        }
+        .bg4{
+            background-color: cadetblue;
+        }
+        .bg5{
+            background-color: chartreuse;
+        }
+        .bg6{
+            background-color: crimson;
+        }
+        h2{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 2%;
+        }
+        .container{
+            background-color: lightgrey;
+            display: flex;
+        }
+        .box{
+            margin: 1%;
+            width: 200px;
+            height: 200px;
+        }
+        
+        .container1{
+            background-color: lightgrey;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .box1{
+            margin: 1%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .container2{
+            background-color: lightgrey;
+            display: flex;
+            flex-direction: column;
+        }
+        .box2{
+            margin: 1%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .container3{
+            background-color: lightgrey;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .box3{
+            margin: 1%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .container4{
+            background-color: lightgrey;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .box4{
+            margin: 1%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .container5{
+            background-color: lightgrey;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .box5{
+            margin: 1%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .container6{
+            background-color: lightgrey;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+        }
+        .box6{
+            margin: 1%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .container7{
+            background-color: lightgrey;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+        }
+        .box7{
+            margin: 1%;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Row</h2>
+    <div class="container">
+        <div class="box bg1">1</div>
+        <div class="box bg2">2</div>
+        <div class="box bg3">3</div>
+        <div class="box bg4">4</div>
+        <div class="box bg5">5</div>
+        <div class="box bg6">6</div>
+    </div>
+
+    <h2>Row-reverse</h2>
+    <div class="container1">
+        <div class="box1 bg1">1</div>
+        <div class="box1 bg2">2</div>
+        <div class="box1 bg3">3</div>
+        <div class="box1 bg4">4</div>
+        <div class="box1 bg5">5</div>
+        <div class="box1 bg6">6</div>
+    </div>
+
+    <h2>Column</h2>
+    <div class="container2">
+        <div class="box2 bg1">1</div>
+        <div class="box2 bg2">2</div>
+        <div class="box2 bg3">3</div>
+    </div>
+
+    <h2>Column-reverse</h2>
+    <div class="container3">
+        <div class="box3 bg1">1</div>
+        <div class="box3 bg2">2</div>
+        <div class="box3 bg3">3</div>
+    </div>
+
+    <h2>No-wrap</h2>
+    <div class="container4">
+        <div class="box4 bg1">1</div>
+        <div class="box4 bg2">2</div>
+        <div class="box4 bg3">3</div>
+        <div class="box4 bg4">4</div>
+        <div class="box4 bg5">5</div>
+        <div class="box4 bg6">6</div>
+        <div class="box4 bg6">7</div>
+        <div class="box4 bg6">8</div>
+    </div>
+
+    <h2>Wrap</h2>
+    <div class="container5">
+        <div class="box5 bg1">1</div>
+        <div class="box5 bg2">2</div>
+        <div class="box5 bg3">3</div>
+        <div class="box5 bg4">4</div>
+        <div class="box5 bg5">5</div>
+        <div class="box5 bg6">6</div>
+        <div class="box5 bg6">7</div>
+        <div class="box5 bg6">8</div>
+    </div>
+
+    <h2>Wrap-reverse</h2>
+    <div class="container6">
+        <div class="box6 bg1">1</div>
+        <div class="box6 bg2">2</div>
+        <div class="box6 bg3">3</div>
+        <div class="box6 bg4">4</div>
+        <div class="box6 bg5">5</div>
+        <div class="box6 bg6">6</div>
+        <div class="box6 bg6">7</div>
+        <div class="box6 bg6">8</div>
+    </div>
+
+    <h2>row-reverse & Wrap-reverse</h2>
+    <div class="container7">
+        <div class="box7 bg1">1</div>
+        <div class="box7 bg2">2</div>
+        <div class="box7 bg3">3</div>
+        <div class="box7 bg4">4</div>
+        <div class="box7 bg5">5</div>
+        <div class="box7 bg6">6</div>
+        <div class="box7 bg6">7</div>
+        <div class="box7 bg6">8</div>
+    </div>
+</body>
+</html>
